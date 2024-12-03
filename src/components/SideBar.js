@@ -1,10 +1,18 @@
+import { useSelector } from "react-redux";
+import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
+
 const SideBar = () => {
 
+    const isMenuOpen = useSelector(store => store.app.isMenuOpen );
+
+    if(!isMenuOpen) return null; // this is known as early return pattern we can also use ternary operator also
+
     return (
-        <div className=" m-2 p-2 shadow-lg w-48">
+        <div className=" mx-2 mb-2 p-2 shadow-lg w-2/12">
             <div className="border-b-2">
             <ul>
-                <li className="p-1 bg-gray-200 hover:bg-gray-100"><span className="m-2">🏠</span>Home</li>
+                <li className="p-1 bg-gray-200 hover:bg-gray-100"><span className="m-2">🏠</span><Link to="/">Home</Link></li>
                 <li className="p-1 hover:bg-gray-200"><span className="m-2">🎥</span>Shorts</li>
                 <li className="p-1 mb-2 hover:bg-gray-200"><span className="m-2">🎦</span>Subscriptions</li>
                 
