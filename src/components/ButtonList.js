@@ -1,7 +1,6 @@
 import Button from "./Button";
 import React from "react";
 
-
 const ButtonList = () => {
   const list = [
     "All",
@@ -30,15 +29,11 @@ const ButtonList = () => {
     // "Electronics",
   ];
 
-
-
   return (
     <div className="flex ml-4">
-      
-        {list.map((item, index) => (
-          <Button key={index} name={item} />
-        ))}
-      
+      {list.map((item, index) => (
+        <Button key={index} name={item} />
+      ))}
     </div>
   );
 };
