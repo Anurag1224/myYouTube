@@ -6,7 +6,8 @@ const VideoCard = ({ info }) => {
   const { channelTitle, thumbnails, title } = snippet;
 
   return (
-    <div className="p-2 mx-2 mb-5 w-[344px] shadow-md ">
+    <div className="p-2 mx-2 mb-5 w-[344px] h-[344px] shadow-lg">
+      <div className="w-full h-full  ">
       <img
         className="rounded-lg m-1"
         alt="Thumbnail"
@@ -19,6 +20,7 @@ const VideoCard = ({ info }) => {
           <li> {statistics.viewCount} views </li>
         </ul>
       </div>
+    </div>
     </div>
   );
 };

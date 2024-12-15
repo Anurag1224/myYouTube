@@ -8,7 +8,8 @@ const SideBar = () => {
   if (!isMenuOpen) return null; // this is known as early return pattern we can also use ternary operator also
 
   return (
-    <div className=" mx-2 mb-2 p-2 shadow-lg w-2/12">
+    <div className="w-2/12 relative bg-white ">
+      <div className=" mx-2 mb-2 p-2 shadow-xl w-full bg-white absolute">
       <div className="border-b-2">
         <ul>
           <li className="p-1 bg-gray-200 hover:bg-gray-100">
@@ -106,6 +107,7 @@ const SideBar = () => {
           </li>
         </ul>
       </div>
+    </div>
     </div>
   );
 };

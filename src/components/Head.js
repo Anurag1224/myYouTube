@@ -1,7 +1,7 @@
 import { useDispatch, useSelector } from "react-redux";
 import { toggleMenu } from "../utils/appSlice";
 import { useEffect, useState } from "react";
-import { YOUTUBE_SEARCH_API } from "../utils/constants";
+import { YOUTUBE_SEARCH_API, IMAGES } from "../utils/constants";
 import { cacheResults } from "../utils/searchDataSlice";
 // import { Link } from "react-router-dom";
 
@@ -49,7 +49,7 @@ const Head = () => {
   };
 
   return (
-    <div className="grid grid-flow-col shadow-lg m-2 p-5">
+    <div className="grid grid-flow-col  shadow-lg m-2 p-5 ">
       <div className="flex col-span-2">
         <img
           onClick={() => toggleMenuHandler()}
@@ -61,7 +61,7 @@ const Head = () => {
           <img
             className=" h-8 "
             alt="Logo"
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Logo_of_YouTube_%282015-2017%29.svg/753px-Logo_of_YouTube_%282015-2017%29.svg.png"
+            src= {IMAGES.LOGO_LIGHT}
           />
         </a>
       </div>
