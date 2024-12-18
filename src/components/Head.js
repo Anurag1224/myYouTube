@@ -58,11 +58,7 @@ const Head = () => {
           src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/1200px-Hamburger_icon.svg.png"
         />
         <a href="/">
-          <img
-            className=" h-8 "
-            alt="Logo"
-            src= {IMAGES.LOGO_LIGHT}
-          />
+          <img className=" h-8 " alt="Logo" src={IMAGES.LOGO_LIGHT} />
         </a>
       </div>
       <div className="col-span-9 ml-40">
